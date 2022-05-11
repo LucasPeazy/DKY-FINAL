@@ -1,0 +1,905 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: url('cursors/cursor.png'), auto;
+
+}
+
+
+.free-shipping-box {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #484545;
+    font-size: 20px;
+    font-family: 'Unica One';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+  }
+  .header2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+  
+  .none {
+     color: white;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Timmana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+  .cart {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;;
+      justify-content: flex-end;
+      font-family: 'Voces';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+
+  }
+
+  .catalog {
+      display: flex;
+  }
+  .card-image>img {
+      border-radius: 30px;
+    
+  }
+
+  .card-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+  }
+  .cart-text {
+      display: flex;
+      justify-content: center;
+      font-size: 27px;
+      font-family: 'Cormorant Garamond';
+      font-weight: 300;
+      padding-top: 10px;
+      padding-bottom: 3px;
+  }
+  .cart-price {
+    font-family: 'Unica One';
+      font-weight: 700;
+      font-size: 20px;
+  }
+  
+  .catalog {
+      display: flex;;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+
+
+
+li {
+   list-style: none;
+}
+
+
+/* flex-контейнер */
+.block__row{
+display:flex;
+flex: 0 0 auto;
+}
+
+/* flex-элемент */
+.block__element{
+
+flex: 0 1 33.333%;
+}
+
+/* flex-элемент №1 */
+.block__element_1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Varela Round';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+
+}
+
+/* flex-элемент №2 */
+.block__element_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Varela Round';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+    
+}
+
+/* flex-элемент №3 */
+.block__element_3{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* контент */
+.block__content{
+    display: flex;;
+    flex-direction: column;
+ 
+}
+
+a:nth-child(2) {
+ margin-top: 5px;
+ margin-bottom: 5px;
+ color: red;;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.card-wrapper {
+    transition-duration: 0.3s;
+  }
+  .card-wrapper>.card-image>img {
+    transition-duration: 0.3s;
+  }
+  .card-wrapper:hover {
+    transition-duration: 0.3s;
+    transform: translateY(-10px);
+  }
+  
+  .card-wrapper>img:hover{
+    transition-duration: 0.3s;
+  }
+
+  .block__row {
+      display: flex;
+    flex: 0 0 auto; 
+  }
+
+  .main {
+      display: flex;
+      flex: 1 0 auto;
+  }
+  
+  .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+  }
+
+  .name-price {
+      display: flex;;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Unica One';
+    font-weight: 1000;
+    font-size: 23px;  
+  }
+
+  .sizes {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 10px;
+      font-family: 'Yanone Kaffeesatz';
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+.size-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    transition: background-color 0.3s ease-out,
+    border 0.3s ease-out,
+    color 0.3s ease-out;
+}
+
+.size-box:active,
+.size-box:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    transition: background-color 0.3s ease-in,
+    border-color 0.3s ease-in,
+    color 0.3s ease-in;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    color: white;
+}
+
+.size-box-xl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 5px 0px 5px 5px;
+  height: 35px;
+  width: 35px;
+  transition: background-color 0.3s ease-out,
+  border 0.3s ease-out,
+  color 0.3s ease-out;
+}
+
+.size-box-xl:active,
+.size-box-xl:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  transition: background-color 0.3s ease-in,
+  border-color 0.3s ease-in,
+  color 0.3s ease-in;
+  margin: 5px 0px 5px 5px;
+  height: 35px;
+  width: 35px;
+  background-color: black;
+  color: white;
+}
+
+
+
+.purchase {
+    display: flex;
+    padding-top: 10px;
+}
+.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Cormorant Garamond';
+    font-weight: 300;
+    font-size: 35px;
+    flex: 0 0 auto;
+}
+.buy {
+    display: flex;
+    margin: 5px 0px 5px 0px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.buy {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+      border-color 0.2s ease-out,
+      color 0.2s ease-out;
+    font-size: 25px;
+    width: 250px;
+    height: 50px;
+    padding: 0px;
+  }
+  
+  .buy:hover,
+  .buy:active {
+    background-color: black;
+    border-color: #fff;
+    color: white;
+    transition: background-color 0.3s ease-in,
+      border-color 0.3s ease-in,
+      color 0.3s ease-in;
+    font-size: 25px;
+
+  }
+.opis1 {
+    padding-top: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      font-family: 'Yanone Kaffeesatz';
+    font-weight: 300;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+  .opis2 {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      font-family: 'Yanone Kaffeesatz';
+    font-weight: 300;
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
+
+  .box-2 {
+      display: flex ;
+  }
+
+  
+  
+  
+.content {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+hr {
+    width: 100%;
+    color: black;
+    margin: 0;
+    z-index: 9999;
+}
+
+a {
+    text-decoration: none;
+    outline: none ;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+   .fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+
+  
+
+  /*------------Форма заказа ---------------- */
+.popup__overlay {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  text-align: center
+}
+
+.order-form {
+    background: rgb(255, 255, 255);
+    border-radius: 14px;
+    border: 1px solid black;
+    box-shadow: 1px 0px 5px rgb(125, 125, 125);
+    display: flex;
+    padding: 20px;
+    margin: 100px auto;
+    max-width: 800px;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+  
+.for_body {
+  overflow: hidden;
+}
+
+
+.item-list1 {
+  display: flex;
+  background-color: black;
+}
+
+.cart-img {
+  display: flex;
+}
+
+
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+#someInputId,
+#someInputId2,
+#someInputId3 {
+  display: flex;
+  max-width: 10px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item-quantity {
+  display: flex;
+  flex-direction: column;
+}
+
+.quantity {
+  display: flex;
+}
+
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input {
+  border: 0;
+}
+
+.wrapper-1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+                        
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+
+
+    
+    
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+          animation-name: slideInUp;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+
+
+
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  font-family: 'Cormorant Garamond';
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.item-name {
+  font-family: 'Cormorant Garamond';
+  font-size: 25px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+    .fadeOut {
+      -webkit-animation-name: fadeOut;
+      animation-name: fadeOut;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      }
+      @-webkit-keyframes fadeOut {
+      0% {opacity: 1;}
+      100% {opacity: 0;}
+      }
+      @keyframes fadeOut {
+      0% {opacity: 1;}
+      100% {opacity: 0;}
+      } 
+
+      .offer_button {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .buy2 {
+        display: flex;
+        margin: 3px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 500;
+    }
+    
+    .buy2 {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        transition: background-color 0.2s ease-out,
+          border-color 0.2s ease-out,
+          color 0.2s ease-out;
+        font-size: 20px;
+        width: 150px;
+        height: 30px;
+        padding: 0px;
+      }
+
+
+      .buy2:hover,
+      .buy2:active {
+        background-color: black;
+        border-color: #fff;
+        color: white;
+        transition: background-color 0.3s ease-in,
+          border-color 0.3s ease-in,
+          color 0.3s ease-in;
+        font-size: 20px;
+    
+      }
+
+
+      .img-tovar {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: center;
+      }
+
+//* Index Media *//
+
+      @media screen and (max-width: 637px) {
+        .catalog {
+          justify-content: center;
+        }
+        .tovar {
+          max-width: 300px;
+        }
+      }
+
+//* Курсор *//
+    img {
+      cursor: url('cursors/cursor.png'), auto;
+    }
+
+
+    //* Tovar Media *//
+
+    @media screen and (max-width: 1440px) {
+      .wrapper {
+        min-width: 1024px;
+      }
+    }
+
+    @media screen and (max-width: 1204px) {
+      .opis {
+        max-width: 300px;
+      }
+    }
+  
+
+    @media screen and (max-width: 1024px) {
+      .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .wrapper {
+        min-width: 786px;
+      }
+      .box-2 {
+        justify-content: center
+      }
+      .sizes {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .purchase {
+        justify-content: center;
+      }
+      .opis1 {
+        justify-content: center;
+      }
+      .opis2 {
+        justify-content: center;
+      }
+      .opis {
+        padding-bottom: 15px;
+      }
+    }
+
+@media screen and  (max-width: 785px) {
+  .wrapper {
+    min-width: 300px;
+  }
+  .img-tovar{
+    max-width: 400px;
+    max-height: 380px;
+  }
+  .buy {
+    width: 200px;
+  }
+}
+
+
+
+    @media screen and (max-width: 750px) {
+      .main {
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+
+
+.tovar {
+  max-width: 700px;
+  width: 100%;
+  height: 100%;
+}
+
+.size-2 {
+  display: flex;
+}
+
+
+.opis {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.bottom_menu_cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.item-price,
+.item-quantity,
+.item-size,
+.total {
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 17px;
+}
+
+
+
+
+
+@media screen and (max-width: 433px) {
+  .order_ty{
+    font-size: 25px;
+  }
+  .order_id_text {
+    font-size: 25px;
+  }
+  .order_id {
+    font-size: 25px;
+  }
+}
+
+
+
+@media screen and (max-width: 638px) {
+  .catalog {
+    justify-content: center;
+  }
+}
+  
+.myaa {
+  display: flex;
+  justify-content: center;
+}
+
